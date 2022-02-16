@@ -67,9 +67,9 @@ select {
 
 /*colors*/
 
-$VeryDarkMagenta: #502050;
+$VeryDarkMagenta: #512051;
 $SoftPink: #ee68a4;
-$DarkGrayishMagenta: #937b92;
+$DarkGrayishMagenta: #927b91;
 $LightGrayishMagenta: #f7f2f7;
 $White: #ffffff;
 
@@ -82,22 +82,86 @@ html {
 }
 
 body {
-  min-height: 100vh; 
+  min-height: 100vh;
   display: grid;
-  margin: 0 auto;
   align-content: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
-
-.container{
+.container {
+  margin: 0 auto;
   max-width: 375px;
-
-  background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+  background-image: url("/images/bg-pattern-top-mobile.svg"),
+    url("/images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: auto;
 }
+
+.heading__title {
+  font-family: $Spartan;
+  font-size: 2.133rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -1.1428571939468384px;
+  text-align: center;
+  color: $VeryDarkMagenta;
+  margin: 5rem 0 1.125rem;
+}
+
+.heading__description {
+ max-width: 19rem;
+ margin:0 auto;
+  font-family: $Spartan;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: $DarkGrayishMagenta;
+}
+
+.ratings{
+  margin-bottom:3.0625rem;
+}
+
+.ratings__first,
+.ratings__second,
+.ratings__third {
+  max-width: 327px;
+  margin: 0 auto;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: $LightGrayishMagenta;
+  font-family: $Spartan;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $VeryDarkMagenta;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ratings-stars{
+  display:flex;
+  justify-content:center;
+  padding-right:0.53rem; 
+  padding: 1rem 0 1rem;
+}
+.ratings-stars img{
+ padding-right:0.53rem; 
+ &:last-of-type{
+   padding-right:0;
+ } 
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
