@@ -72,6 +72,7 @@ select {
 /*fonts*/
 html {
   font-size: 15px;
+  font-family: "Spartan", sans-serif;
 }
 
 body {
@@ -96,7 +97,6 @@ body {
 }
 
 .heading__title {
-  font-family: "Spartan", sans-serif;
   font-size: 2.133rem;
   font-weight: 700;
   line-height: 2rem;
@@ -109,8 +109,7 @@ body {
 .heading__description {
   max-width: 19rem;
   margin: 0 auto;
-  font-family: "Spartan", sans-serif;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.6rem;
   letter-spacing: -0.5px;
@@ -134,7 +133,6 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   background-color: #f7f2f7;
-  font-family: "Spartan", sans-serif;
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 15px;
@@ -164,9 +162,62 @@ body {
   padding-right: 0;
 }
 
+.testimonial {
+  margin-bottom: 5rem;
+}
+
+.testimonial__content {
+  max-width: 327px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #512051;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.testimonial__content__picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin: 2.3rem 1.4375rem 1.625rem 1.8rem;
+}
+
+.testimonial__content__name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 2.45rem 0 0.3rem;
+}
+
+.testimonial__content__occupation {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ee69a4;
+  margin-bottom: 1.58rem;
+}
+
+.testimonial__content__blockquote {
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.2321428507566452px;
+  text-align: left;
+  color: #f7f2f7;
+  padding: 0 1.8rem 1.8rem 1.8rem;
+}
+
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
+  bottom: 6rem;
 }
 
 .attribution a {
