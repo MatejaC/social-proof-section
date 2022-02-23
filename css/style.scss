@@ -78,26 +78,32 @@ $White: #ffffff;
 $Spartan: "Spartan", sans-serif;
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   font-family: $Spartan;
 }
 
 body {
-  min-height: 100vh;
-  display: grid;
-  align-content: center;
-  justify-content: center;
+  overflow-x: hidden;
   background-color: $White;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container {
   margin: 0 auto;
+  display: grid;
+  align-content: center;
+  justify-content: center;
   max-width: 375px;
   background-image: url("/images/bg-pattern-top-mobile.svg"),
     url("/images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: auto;
+}
+
+.heading {
+  margin-top: 0;
 }
 
 .heading__title {
@@ -214,10 +220,9 @@ body {
 }
 
 .attribution {
-  display: none;
   font-size: 11px;
   text-align: center;
-  bottom: 6rem;
+  margin-top: 0.7rem;
 }
 
 .attribution a {
@@ -226,6 +231,7 @@ body {
 
 @media screen and (min-width: 1150px) {
   .container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     background-image: url("/images/bg-pattern-top-desktop.svg"),
@@ -247,6 +253,9 @@ body {
     column-span: 1;
     grid-row: 1;
     grid-area: heading;
+  }
+
+  .heading__title {
     margin-top: 7.9rem;
   }
 
