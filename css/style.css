@@ -76,7 +76,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   background-color: #ffffff;
   display: -ms-grid;
   display: grid;
@@ -321,8 +320,8 @@ body {
     margin: 0 0 1rem 6rem;
   }
   .testimonial {
-    grid-column: 1 / -1;
     grid-row: 2 / -1;
+    grid-column: 1 / -1;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -340,7 +339,6 @@ body {
   }
   .testimonial__content {
     max-width: 350px;
-    max-height: 234px;
     margin: 4.5rem 0 2rem 10.3125rem;
   }
   .testimonial__content:nth-child(2) {
