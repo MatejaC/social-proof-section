@@ -91,15 +91,12 @@ body {
 
 .container {
   margin: 0 auto;
-  display: grid;
-  align-content: center;
-  justify-content: center;
   max-width: 375px;
   background-image: url("/images/bg-pattern-top-mobile.svg"),
     url("/images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
-  background-size: auto;
+  background-size: 100%;
 }
 
 .heading {
@@ -107,9 +104,10 @@ body {
 }
 
 .heading__title {
-  font-size: 2.133rem;
+  max-width: 327px;
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 700;
-  line-height: 2rem;
+  line-height: clamp(2rem, 2.5vw, 3rem);
   letter-spacing: -1.1428571939468384px;
   text-align: center;
   color: $VeryDarkMagenta;
@@ -117,11 +115,11 @@ body {
 }
 
 .heading__description {
-  max-width: 19rem;
+  max-width: 19.8rem;
   margin: 0 auto;
   font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.6rem;
+  line-height: clamp(1.6rem, 2.5vh, 4.56rem);
   letter-spacing: -0.5px;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -143,7 +141,7 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   background-color: $LightGrayishMagenta;
-  font-size: 0.86rem;
+  font-size: clamp(0.81rem, 2.5vh, 0.86rem);
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 0px;
@@ -227,6 +225,7 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1150px) {
@@ -257,11 +256,55 @@ body {
 
   .heading__title {
     margin-top: 7.9rem;
+    margin-left: 10.3125rem;
+    text-align: left;
+  }
+
+  .heading__description {
+    max-width: 445px;
+    text-align: left;
+    margin: -0.75rem 0 4.5rem 10.3125rem;
   }
 
   .ratings {
     grid-column: 2 / 3;
     grid-area: ratings;
+  }
+
+  .ratings__first,
+  .ratings__second,
+  .ratings__third {
+    max-width: 445px;
+    max-height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0rem;
+  }
+
+  .ratings-stars {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ratings-stars img {
+    padding-right: 0.53rem;
+    &:last-of-type {
+      padding-right: 1.4rem;
+    }
+  }
+
+  .ratings__first {
+    margin: 9rem 0 1rem 0;
+  }
+
+  .ratings__second {
+    margin: 0 0 1rem 3rem;
+  }
+
+  .ratings__third {
+    margin: 0 0 1rem 6rem;
   }
 
   .testimonial {
