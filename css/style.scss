@@ -92,8 +92,8 @@ body {
 .container {
   margin: 0 auto;
   max-width: 375px;
-  background-image: url("/images/bg-pattern-top-mobile.svg"),
-    url("/images/bg-pattern-bottom-mobile.svg");
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 100%;
@@ -111,7 +111,7 @@ body {
   letter-spacing: -1.1428571939468384px;
   text-align: center;
   color: $VeryDarkMagenta;
-  margin: 5rem 0 1.125rem;
+  margin: 5rem 0 1.125rem 1.5rem;
 }
 
 .heading__description {
@@ -264,7 +264,7 @@ body {
   .heading__description {
     max-width: 445px;
     text-align: left;
-    margin: -0.75rem 0 4.5rem 10.3125rem;
+    margin: 0 0 4.5rem 10.3125rem;
   }
 
   .ratings {
