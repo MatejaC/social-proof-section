@@ -236,7 +236,7 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     background-size: auto;
