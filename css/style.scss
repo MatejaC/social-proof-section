@@ -96,7 +96,11 @@ body {
     url("/images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
+<<<<<<< HEAD
   background-size: 100%;
+=======
+   background-size: 100%;
+>>>>>>> main
 }
 
 .heading {
@@ -104,10 +108,17 @@ body {
 }
 
 .heading__title {
+<<<<<<< HEAD
   max-width: 327px;
   font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 700;
   line-height: clamp(2rem, 2.5vw, 3rem);
+=======
+  max-width:327px;
+  font-size: clamp(2rem, 2.5vw, 3rem); 
+  font-weight: 700;
+  line-height: clamp(2rem, 2.5vw, 3rem); 
+>>>>>>> main
   letter-spacing: -1.1428571939468384px;
   text-align: center;
   color: $VeryDarkMagenta;
@@ -252,6 +263,7 @@ body {
     column-span: 1;
     grid-row: 1;
     grid-area: heading;
+    
   }
 
   .heading__title {
@@ -261,9 +273,15 @@ body {
   }
 
   .heading__description {
+<<<<<<< HEAD
     max-width: 445px;
     text-align: left;
     margin: -0.75rem 0 4.5rem 10.3125rem;
+=======
+      max-width: 445px;
+  text-align: left;
+  margin: -0.75rem 0 4.5rem 10.3125rem;
+>>>>>>> main
   }
 
   .ratings {
