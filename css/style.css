@@ -112,7 +112,7 @@ body {
   margin: 0 auto;
   font-size: 0.9rem;
   font-weight: 500;
-  line-height: clamp(1.6rem, 2.5vh, 4.56rem);
+  line-height: 25px;
   letter-spacing: -0.5px;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -230,9 +230,8 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1000px) {
   .container {
-    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
@@ -252,20 +251,9 @@ body {
     grid-column: 1;
     -webkit-column-span: 1;
             column-span: 1;
-    grid-row: 1;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: heading;
-  }
-  .heading__title {
-    margin-top: 7.9rem;
-    margin-left: 10.3125rem;
-    text-align: left;
-  }
-  .heading__description {
-    max-width: 445px;
-    text-align: left;
-    margin: 0 0 4.5rem 10.3125rem;
   }
   .ratings {
     -ms-grid-column: 2;
@@ -274,7 +262,26 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: ratings;
+    margin-bottom: 0;
     margin-left: 1rem;
+  }
+  .testimonial {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: testimonial;
+  }
+  .heading__title {
+    margin-top: 7.9rem;
+    margin-left: 10rem;
+    text-align: left;
+  }
+  .heading__description {
+    max-width: 445px;
+    text-align: left;
+    margin: 0 0 4.5rem 10rem;
   }
   .ratings__first,
   .ratings__second,
@@ -320,12 +327,6 @@ body {
     margin: 0 0 1rem 6rem;
   }
   .testimonial {
-    grid-row: 2 / -1;
-    grid-column: 1 / -1;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: testimonial;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,13 +340,13 @@ body {
   }
   .testimonial__content {
     max-width: 350px;
-    margin: 4.5rem 0 2rem 10.3125rem;
+    margin: 1.5rem 0 2rem 10rem;
   }
   .testimonial__content:nth-child(2) {
-    margin: 5.5rem 0 1rem 1.875rem;
+    margin: 2.5rem 0 1rem 1.8rem;
   }
   .testimonial__content:nth-child(3) {
-    margin: 6.5rem 0 0 1.875rem;
+    margin: 3.5rem 10rem 0 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
